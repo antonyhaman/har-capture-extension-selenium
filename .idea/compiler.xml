@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="har-collector-extension" />
         <module name="har-collector-junit5-extension" />
         <module name="har-collector" />
       </profile>

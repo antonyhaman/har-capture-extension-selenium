@@ -1,7 +1,0 @@
-# Created at 2020-05-05T23:28:14.760
-Boot Manifest-JAR contains absolute paths in classpath 'F:\CODING\har-collector\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-
-# Created at 2020-05-05T23:28:15.503
-[AppClassLoader@18b4aac2] warning javax.* types are not being woven because the weaver option '-Xset:weaveJavaxPackages=true' has not been specified
-
