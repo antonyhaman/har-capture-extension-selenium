@@ -13,3 +13,22 @@ HAR file can be viewed with various services like [this](http://www.softwareisha
 ![](https://github.com/kotvertolet/har-collector-junit5-extension/blob/master/screenshots/har_viewer_screenshot.jpg)
 
 ## How to use
+
+### Installation
+Add [jitpack](https://jitpack.io/) repository to your pom.xml:
+```xml	
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+```
+Add dependency to your dependencies section:
+```xml
+<dependency>
+  <groupId>com.github.kotvertolet</groupId>
+  <artifactId>har-collector-junit5-extension</artifactId>
+  <version>LAST_VERSION</version>
+</dependency>
+```
