@@ -5,9 +5,11 @@ Junit 5 extension for Selenium Webdriver and Allure that captures HTTP activity 
 ## How does it look?
 
 When properly set, extension starts proxy server which browser working through therefore all incoming and outcoming HTTP requests are capturing by the extension, after the test execution HAR file with HTTP requests captured attaches to Allure report:
+
 ![](https://github.com/kotvertolet/har-collector-junit5-extension/blob/master/screenshots/har_allure_report.jpg)
 
 HAR file can be viewed with various services like [this](http://www.softwareishard.com/har/viewer/):
+
 ![](https://github.com/kotvertolet/har-collector-junit5-extension/blob/master/screenshots/har_viewer_screenshot.jpg)
 
 ## How to use
