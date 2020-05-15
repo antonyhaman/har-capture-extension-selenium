@@ -1,4 +1,4 @@
-# har-collector-extension-selenium
+# har-capture-extension-selenium
 
 Junit 5 extension for Selenium Webdriver and Allure that captures HTTP activity of browser and stores it into [HAR](https://en.wikipedia.org/wiki/HAR_(file_format)) file attached to Allure report. Analazying HAR files may be very useful for finding bugs and it's root cause especially when problem can't be easily reproduced or happens from time to time.
 
