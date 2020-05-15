@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BaseTest {
 
+    public ChromeDriver driver;
     private static final ChromeOptions chromeOptions;
     static {
         System.setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
@@ -16,8 +17,8 @@ public class BaseTest {
     }
 
     @RegisterExtension
-    static HarCollectorExtension harCollectorExtension = HarCollectorExtension.builder().addCapabilities(chromeOptions).build();
-    public ChromeDriver driver;
+    static HarCaptureExtension harCaptureExtension = HarCaptureExtension.builder()
+            .addCapabilities(chromeOptions).build();
 
     @BeforeEach
     public void setup() {

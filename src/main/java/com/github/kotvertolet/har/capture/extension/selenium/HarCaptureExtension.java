@@ -13,12 +13,12 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-public class HarCollectorExtension implements BeforeAllCallback, BeforeTestExecutionCallback, AfterTestExecutionCallback, AfterAllCallback {
+public class HarCaptureExtension implements BeforeAllCallback, BeforeTestExecutionCallback, AfterTestExecutionCallback, AfterAllCallback {
 
     private BrowserUpProxyServer proxy;
     private static MutableCapabilities customCapabilities;
 
-    private HarCollectorExtension() {
+    private HarCaptureExtension() {
         // NOP
     }
 
@@ -68,8 +68,8 @@ public class HarCollectorExtension implements BeforeAllCallback, BeforeTestExecu
             return this;
         }
 
-        public HarCollectorExtension build() {
-            return new HarCollectorExtension();
+        public HarCaptureExtension build() {
+            return new HarCaptureExtension();
         }
     }
 }
