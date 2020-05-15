@@ -28,7 +28,22 @@ Add dependency to your dependencies section:
 ```xml
 <dependency>
   <groupId>com.github.kotvertolet</groupId>
-  <artifactId>har-collector-junit5-extension</artifactId>
+  <artifactId>har-capture-extension-selenium</artifactId>
   <version>LAST_VERSION</version>
 </dependency>
 ```
+Alternatively, you can copy HarCaptureExtension.class into your project directly.
+
+Then, in your BaseTest(AbstractTest, etc) initialize extension as following:
+```java
+    private static final ChromeOptions chromeOptions;
+    static {
+        chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("start-maximized");
+    }
+
+    @RegisterExtension
+    static HarCaptureExtension harCaptureExtension = HarCaptureExtension.builder()
+            .addCapabilities(chromeOptions).build();
+```
+Then initialize your webdriver instance with your ChromeOptions(FirefoxOptions, etc). That's it.
