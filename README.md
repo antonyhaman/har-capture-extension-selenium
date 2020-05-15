@@ -1,4 +1,4 @@
-# har-capture-extension-selenium
+# har-capture-extension-selenium [![](https://jitpack.io/v/kotvertolet/har-capture-extension-selenium.svg)](https://jitpack.io/#kotvertolet/har-capture-extension-selenium)
 
 Junit 5 extension for Selenium Webdriver and Allure that captures HTTP activity of browser and stores it into [HAR](https://en.wikipedia.org/wiki/HAR_(file_format)) file attached to Allure report. Analazying HAR files may be very useful for finding bugs and it's root cause especially when problem can't be easily reproduced or happens from time to time.
 
@@ -47,3 +47,6 @@ Then, in your BaseTest(AbstractTest, etc) initialize extension as following:
             .addCapabilities(chromeOptions).build();
 ```
 Then initialize your webdriver instance with your ChromeOptions(FirefoxOptions, etc). That's it.
+
+## Requirements
+Junit5, Selenium Webdriver, Allure
