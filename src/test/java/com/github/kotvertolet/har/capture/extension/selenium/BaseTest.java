@@ -1,4 +1,4 @@
-package com.github.kotvertolet.har.hunter.extension.selenium;
+package com.github.kotvertolet.har.capture.extension.selenium;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,7 +10,7 @@ public class BaseTest {
 
     private static final ChromeOptions chromeOptions;
     static {
-        System.setProperty("webdriver.chrome.driver", "F:/CODING/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver.exe");
         chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");
     }

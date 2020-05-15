@@ -1,4 +1,4 @@
-package com.github.kotvertolet.har.hunter.extension.selenium;
+package com.github.kotvertolet.har.capture.extension.selenium;
 
 import com.browserup.bup.BrowserUpProxyServer;
 import com.browserup.bup.client.ClientUtil;

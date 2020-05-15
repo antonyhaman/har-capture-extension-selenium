@@ -1,12 +1,12 @@
-package com.github.kotvertolet.har.hunter.extension.selenium;
+package com.github.kotvertolet.har.capture.extension.selenium;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class TestClass extends BaseTest {
+public class HarCaptureExtensionTest extends BaseTest {
 
     @Test
-    public void test() {
+    public void checkHarCapturing() {
         driver.get("https://www.google.com/");
         Assertions.assertTrue(driver.findElementByName("q").isDisplayed());
     }
