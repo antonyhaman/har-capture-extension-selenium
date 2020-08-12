@@ -1,10 +1,10 @@
 # har-capture-extension-selenium [![](https://jitpack.io/v/kotvertolet/har-capture-extension-selenium.svg)](https://jitpack.io/#kotvertolet/har-capture-extension-selenium)
 
-Junit 5 extension for Selenium Webdriver and Allure that captures HTTP activity of browser and stores it into [HAR](https://en.wikipedia.org/wiki/HAR_(file_format)) file attached to Allure report. Analazying HAR files may be very useful for finding bugs and it's root cause especially when problem can't be easily reproduced or happens from time to time.
+Junit 5 extension for Selenium Webdriver and Allure that captures HTTP activity of browser and stores it into [HAR](https://en.wikipedia.org/wiki/HAR_(file_format)) file attached to Allure report. Analazying HAR files may be very useful for finding bugs and it's root cause especially when the problem can't be easily reproduced or happens from time to time.
 
-## How does it look?
+## How does it work?
 
-When properly set, extension starts proxy server which browser working through therefore all incoming and outcoming HTTP requests are capturing by the extension, after the test execution HAR file with HTTP requests captured attaches to Allure report:
+When properly set, the extension starts a proxy server that captures outcoming HTTP requests and starts a chrome instance which is set to use previously created proxy, after the test execution HAR file with HTTP requests attaches to Allure report:
 
 ![](https://github.com/kotvertolet/har-collector-junit5-extension/blob/master/screenshots/har_allure_report.jpg)
 
